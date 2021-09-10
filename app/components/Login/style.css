@@ -1,0 +1,36 @@
+.loginPage{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #F2F4F4;
+}
+
+.loginForm{
+    box-shadow: -8px 12px 18px 0 rgba(25,42,70,.13);
+    margin: auto;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    padding: 45px;
+    width: 30%;
+    height: auto;
+    background-color: #FFF;
+    outline: none;
+}
+
+.input{
+    margin-bottom: 20px;
+}
+
+.message{
+    margin: 0px 0;
+    color: red;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    height: 22px;
+}
+
+.button{
+    margin-top: 20px;
+}

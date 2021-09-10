@@ -3,12 +3,15 @@ let HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-    entry: '.app/app.jsx',
+    entry: './app/app.jsx',
     output:{
-      path: path.resolve(__dirname, './public/js/'),
-      publicPath: 'https://science-project.ru/js/',
-      filename: '[name].[contenthash].js',
-      clean : true,
+      path: path.resolve(__dirname, './public'),
+      publicPath: '/public/',
+      filename: "bundle.js"
+      // path: path.resolve(__dirname, './public/js/'),
+      // publicPath: 'https://science-project.ru/js/',
+      // filename: '[name].[contenthash].js',
+      // clean : true,
     },
     devServer: {
       historyApiFallback: true,

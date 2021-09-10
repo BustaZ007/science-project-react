@@ -1,0 +1,43 @@
+.inputBlock{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.label{
+    width: 100%;
+    color: #475F7B;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.inputWithIconBlock{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border: 1px solid #DFE3E7;
+    border-radius: 3px;
+    
+}
+
+.inputWithIconBlock i {
+    color: #475F7B;
+    font-size: 25px;
+    flex: 0;
+    margin: 0px 5px;
+}
+.passHideButton{
+    cursor: pointer;
+}
+
+.input{
+    flex: 1;
+    color: #475F7B;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Montserrat', sans-serif;
+}

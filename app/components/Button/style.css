@@ -1,0 +1,25 @@
+.button{
+    background-color: #5A8DEE;
+    box-shadow: 0 2px 4px 0 rgba(90,141,238,.5);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #719DF0;
+    box-shadow: 0 4px 12px 0 rgba(90,141,238,.6);
+}
+
+.button p{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 8px 0;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+}
+.button i{
+    font-size: 25px;
+    margin: 8px 0;
+    color: #FFF;
+}

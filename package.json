@@ -4,20 +4,20 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-      "start": "webpack serve",
-      "watch": "webpack --watch",
-      "build": "webpack --mode production",
-      "build-dev": "webpack",
-      "clean": "rm -rf ./bundle"
+        "start": "webpack serve",
+        "watch": "webpack --watch",
+        "build": "webpack --mode production",
+        "build-dev": "webpack",
+        "clean": "rm -rf ./bundle"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/BustaZ007/science-project-react.git"
+        "type": "git",
+        "url": "git+https://github.com/BustaZ007/science-project-react.git"
     },
     "author": "Zaborin Pavel",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/BustaZ007/science-project-react/issues"
+        "url": "https://github.com/BustaZ007/science-project-react/issues"
     },
     "homepage": "https://github.com/BustaZ007/science-project-react#readme",
     "devDependencies": {
@@ -46,4 +46,4 @@
         "react-dom": "^17.0.0",
         "react-router-dom": "^5.2.0"
     }
-  }
+}
