@@ -1,0 +1,23 @@
+.error{
+    transition: 1s;
+    animation-name: errorMove;
+    animation-duration: 1s;
+}
+
+@keyframes errorMove{
+    0%, 100%{
+        transform: translateX(0);
+        box-shadow: 0 4px 12px 0 rgba(235, 43, 43, 0.6);
+        transform: translateX(-3px);
+    }
+    10% ,30%,50%{
+        border-color: red !important;
+        box-shadow: 0 4px 12px 0 rgba(235, 43, 43, 0.6);
+        transform: translateX(3px);
+    }
+    20%, 40%, 60%{
+        border-color: red !important;
+        box-shadow: 0 4px 12px 0 rgba(235, 43, 43, 0.6);
+        transform: translateX(-3px);
+    }
+}

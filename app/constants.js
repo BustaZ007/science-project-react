@@ -1,5 +1,5 @@
 import axios from "axios";
-import { deleteCookie } from "./utils";
+import { deleteCookie } from "./utils.jsx";
 
 const API = axios.create({
     baseURL : 'https://science-project.ru:5000/',

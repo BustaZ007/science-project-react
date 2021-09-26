@@ -16,13 +16,15 @@ export default class Input extends Component {
                 {(this.props.label)
                 ? <label className={styles.label} htmlFor={this.props.id}>{this.props.label}</label> 
                 : null}
-                <div className={styles.inputWithIconBlock}>
+                <div className={styles.inputWithIconBlock} ref={this.props.myRef}>
                     {(this.props.icon)
                     ?<i className={'bx bx-'+this.props.icon} ></i>
                     :null}
                     <input className={styles.input} id={this.props.id}
                     value={this.props.value}
                     onChange={this.props.onChange}
+                    onKeyDown={this.props.onKeyDown}
+                    required={this.props.required}
                     type={this.state.type}
                     placeholder={this.props.placeholder}/>
                     {(this.props.type === 'password')

@@ -34,4 +34,23 @@ export default class ApiServices{
     static logout(){
         API.get('logout');
     }
+
+    //функция для получения информации о пользователе по ID, при ID равном undefined загружается информация о текущем пользователе
+    static getUserInformation(id){
+        return new Promise((resolve)=>{
+            API.get((id)?'user?id='+id:'user')
+                .then((res)=>{
+                    return resolve({
+                        status: ResponseStatus.SUCCES,
+                        data: res.data,
+                    });
+                })
+                .catch(()=>{
+                    return resolve({
+                        status : ResponseStatus.ERROR,
+                        message : 'Ошибка при загрузке пользовательской информации',
+                    });
+                });
+        });
+    }
 }

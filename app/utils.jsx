@@ -1,3 +1,5 @@
+import styles from './style.css';
+
 export const deleteCookie = (name) => {
     const cookie = document.cookie.split(';').some(c => {
         return c.trim().startsWith(name + '=');
@@ -8,4 +10,13 @@ export const deleteCookie = (name) => {
           (('science-project.ru')?";domain="+'science-project.ru':"") +
           ";expires=Thu, 01 Jan 1970 00:00:01 GMT";
     }
-}
+};
+
+export const addErrorOnElements = (elements) => {
+    elements.forEach(element => {
+        element.classList.remove(styles.error);
+        setTimeout(()=>{
+            element.classList.add(styles.error);
+        }, 10);
+    });
+};

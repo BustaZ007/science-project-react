@@ -1,6 +1,6 @@
 import md5 from "md5";
 import { ResponseStatus } from "../constants";
-import { deleteCookie } from "../utils";
+import { deleteCookie } from "../utils.jsx";
 import ApiServices from "./ApiServices";
 
 
