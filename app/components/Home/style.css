@@ -1,0 +1,7 @@
+.app:not(i){
+    font-family: 'Montserrat', sans-serif;
+}
+.app{
+    padding-top: 60px;
+    background-color: #F2F4F4;
+}

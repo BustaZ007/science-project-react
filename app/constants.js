@@ -1,6 +1,7 @@
 import axios from "axios";
 import { deleteCookie } from "./utils.jsx";
 
+const HOST = 'https://science-project.ru/';
 const API = axios.create({
     baseURL : 'https://science-project.ru:5000/',
     withCredentials : true
@@ -24,4 +25,4 @@ const ResponseStatus = {
     ERROR: 'error'
 }
 
-export {API, ResponseStatus};
+export {API, ResponseStatus, HOST};

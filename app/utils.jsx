@@ -20,3 +20,19 @@ export const addErrorOnElements = (elements) => {
         }, 10);
     });
 };
+
+let isEventMount = false;
+export const addEventListenerOnTopBar = (callback) => {
+    if(!isEventMount){
+        window.addEventListener('scroll', () => {
+            console.log(window.scrollY);
+            if(window.scrollY > 15){
+                callback(true);
+            }
+            else{
+                callback(false);
+            }
+        });
+        isEventMount = true;
+    }
+};

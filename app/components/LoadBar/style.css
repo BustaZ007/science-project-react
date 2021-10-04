@@ -1,0 +1,8 @@
+.loadBar{
+    width: 100%;
+    height: 100%;
+    color: #5A8DEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
